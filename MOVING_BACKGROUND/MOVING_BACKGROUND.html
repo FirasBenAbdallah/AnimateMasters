@@ -13,7 +13,19 @@
         text-align: center;
       }
 
-      h1 {
+      .cappadocia {
+        display: inline-flex;
+        font-family: "Impact", sans-serif;
+        background: url("https://placeimg.com/1920/1080");
+        font-size: 10rem;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #bb323254;
+        animation: move 20s alternate infinite;
+        letter-spacing: 0.3rem;
+      }
+
+      .we {
         display: inline-flex;
         font-family: "Impact", sans-serif;
         background: url("https://picsum.photos/1920/1080");
@@ -35,9 +47,11 @@
       }
     </style>
     <div class="container">
-      <h1>WANDERLUST</h1>
-      <br />
-      <h1>EXPLOSION</h1>
+      <h1 class="we">WANDERLUST</h1>
+      <br/>
+      <h1 class="cappadocia">CAPPADOCIA</h1>
+      <br/>
+      <h1 class="we">EXPLOSION</h1>
     </div>
   </body>
 </html>
