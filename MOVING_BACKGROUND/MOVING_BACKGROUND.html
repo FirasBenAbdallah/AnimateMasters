@@ -4,11 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="MOVING_BACKGROUND.css" />
     <title>TEXT ANIMATION</title>
   </head>
   <body>
     <!-- REFRESH THE PAGE TO PREVIEW WITH DIFFERENT BACKGROUND IMAGES -->
+    <style>
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        display: inline-flex;
+        font-family: "Impact", sans-serif;
+        background: url("https://picsum.photos/1920/1080");
+        font-size: 8rem;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #5b728a54;
+        animation: move 30s linear infinite;
+        letter-spacing: 0.3rem;
+      }
+
+      @keyframes move {
+        from {
+          background-position: 0 80%;
+        }
+        to {
+          background-position: 100% 50%;
+        }
+      }
+    </style>
     <div class="container">
       <h1>WANDERLUST</h1>
       <br />
