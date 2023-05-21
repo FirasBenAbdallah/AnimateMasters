@@ -1,3 +1,29 @@
+input {
+  appearance: none;
+  padding: 9px 25px;
+  background-color: #fff;
+  border: 3px solid #865959;
+  border-radius: 3px;
+  outline: #000;
+  cursor: pointer;
+  position: absolute;
+  /* top: 10%; */
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+input::before {
+  content: "Open";
+}
+input:checked:before {
+  content: "Close";
+}
 body {
   margin: 0;
   padding: 0;
